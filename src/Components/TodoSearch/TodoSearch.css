@@ -1,0 +1,40 @@
+.TodoSearch {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    margin: auto;
+}
+
+.TodoSearch__holder {
+    padding: 15px;
+    margin:auto;
+    border: none;
+    background-color: var(--gray-color);
+    border-radius: 10px;
+    width: 20rem;
+}
+
+.TodoSearch__holder::placeholder {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/***RESPONSIVE***/
+
+@media screen and (max-width: 768px) {
+    .TodoSearch__holder {
+        max-width: 100%!important;
+    }
+ }
+
+ @media screen and (max-width: 1026px) {
+    .TodoSearch__holder {
+        max-width: 50%;
+    }
+ }
+
+ @media screen and (min-width: 2040px) {
+    .TodoSearch__holder {
+        max-width: 80%;
+    }
+  }

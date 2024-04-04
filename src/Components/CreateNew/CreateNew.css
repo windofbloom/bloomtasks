@@ -1,0 +1,11 @@
+.createNew {
+    text-align: center;
+}
+
+.createNew__title {
+    font-weight: var(--fw-bold);
+    font-size: 2rem;
+    color: var(--secondary-color);
+    padding: 10px 0 10px 0;
+    line-height: 1em;
+}

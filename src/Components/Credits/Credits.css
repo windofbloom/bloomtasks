@@ -1,0 +1,117 @@
+.credits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.creditUser {
+    flex: 0 1 auto;
+}
+
+.creditUser__portrait {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 80px;
+    font-size: 35px;
+    line-height: 0;
+    color: var(--primary-color);
+}
+
+.creditBody__name {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    font-weight: var(--fw-bold);
+    line-height: 1;
+}
+
+.creditBody {
+    flex: 1 1 0%;
+    position: relative;
+    padding: 15px;
+    border: 1px solid #CAD0D2;
+    border-radius: 16px;
+}
+
+.creditBody:after,
+.creditBody:before {
+  right: 100%;
+  top: 35px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.creditBody:after {
+    border-color: transparent;
+    border-right-color: #ffffff;
+    border-width: 8px;
+    margin-top: -8px;
+  }
+  
+  .creditBody:before {
+    border-color: transparent;
+    border-right-color: #CAD0D2;
+    border-width: 9px;
+    margin-top: -9px;
+  }
+  
+.creditBody__content {
+    font-size: 14px;
+}
+
+.creditBody__socials {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.creditBody__socials a {
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    color: var(--light-color);
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 30px;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.socials_links {
+    font-size: 25px;
+    line-height: 54px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(to bottom, #feb1b7 0%,#fd788b 100%);
+}
+
+.socials_links:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/***RESPONSIVE***/
+ 
+@media screen and (max-width: 768px) {
+    .creditBody {
+        max-width: 100%;
+    }
+
+    .creditBody__socials a {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    .socials_links {
+        font-size: 20px;
+        line-height: 45px;
+    }
+
+ }

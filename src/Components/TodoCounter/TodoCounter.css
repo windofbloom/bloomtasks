@@ -1,0 +1,26 @@
+.TodoCounter {
+    text-align: center;
+}
+
+.TodoCounter__title {
+    font-weight: var(--fw-bold);
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+
+.TodoCounter__subtitle {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+}
+
+.TodoCounter__subtitle span {
+    font-weight: var(--fw-bold);
+}
+
+/***RESPONSIVE***/
+@media screen and (max-width: 768px) {
+    .TodoCounter__title {
+        line-height: 40px;
+    }
+
+}

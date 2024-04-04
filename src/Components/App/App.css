@@ -1,0 +1,71 @@
+.container {
+    max-width: 80%;
+    min-height: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    /* From https://css.glass */
+    background: rgba(246, 246, 246, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(246, 246, 246, 0.3);
+  }
+
+  .container_left {
+    border-radius: 16px;
+    background-color: #ffffff69;
+    width: min(45rem, 40%);
+    padding: 35px;
+    margin: auto;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 31%);
+  }
+
+  .container_right {
+    border-radius: 16px;
+    padding: 35px;
+    width: min(45rem, 50%);
+    background-color: var(--background-color);
+    margin: auto;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 31%);
+  }
+
+ /***RESPONSIVE***/
+ 
+ @media screen and (max-width: 768px) {
+    .container {
+      max-width: 90%;
+      flex-direction: column;
+    }
+
+    .container_left,
+    .container_right {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        transition: all 0.3s;
+    }
+  
+ }
+
+ @media screen and (max-width: 1026px) {
+  .container {
+    max-width: 90%;
+    flex-direction: column;
+  }
+
+  .container_left,
+  .container_right {
+      width: 80%;
+      margin: 20px auto;
+  }
+ }
+
+ @media screen and (min-width: 2040px) {
+      .container {
+          width: 60%;
+      }
+  }

@@ -1,0 +1,23 @@
+.createTodo_container {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.createTodo__button {
+font-family: inherit;
+  font-size: 18px;
+  width: 150px;
+  background: linear-gradient(to bottom, #feb1b7 0%,#fd788b 100%);
+  color: white;
+  padding: 0.8em 1.2em;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.createTodo__button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
