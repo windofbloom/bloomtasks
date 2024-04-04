@@ -20,4 +20,4 @@ This projects focused on the following skills:
 - Install dependancies with ``npm install``
 - Start the local host with ``npm start``
 
-### Have a nice time around ~git log
+### Have a nice time around ~
