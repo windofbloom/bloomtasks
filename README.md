@@ -1,5 +1,7 @@
 # Bloom's Tasks
 
+Hi! Check the Live Project [clicking here](https://windofbloom.github.io/bloomtasks/)
+
 This repository was created to showcase the final project for one of React courses available in Platzi.
 
 This projects focused on the following skills:
