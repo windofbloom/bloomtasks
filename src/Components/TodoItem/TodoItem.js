@@ -1,10 +1,27 @@
 import "./TodoItem.css";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons'
 
+const variants = {
+  hidden: {
+    opacity: 0
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.8
+    }
+  }
+}
+
 function TodoItem(props) {
     return(
-      <ul className="TodoItem">
+      <motion.ul 
+        initial='hidden'
+        animate='visible'
+        variants={variants}
+        className="TodoItem">
         <span className={`TodoItem__icon--check
         ${props.completed && "TodoItem__icon-check--active"}`}
         onClick={props.onComplete}
@@ -17,7 +34,7 @@ function TodoItem(props) {
         onClick={props.onDelete}
         >
         <FontAwesomeIcon icon={faXmark} /></span>
-      </ul>
+      </motion.ul>
     );
   }
 

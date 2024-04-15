@@ -11,7 +11,8 @@ function TodoCounter() {
     return (
       <div className="TodoCounter">
 
-        <h1 className="TodoCounter__title">
+        <h1 
+        className="TodoCounter__title">
           With the power of the Moon
         </h1>
 

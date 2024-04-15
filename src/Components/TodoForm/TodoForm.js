@@ -1,6 +1,8 @@
 import React from "react";
 import { TodoContext } from "../TodoContext/Context";
 import './TodoForm.css';
+import { motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 function TodoForm () {
     const {
@@ -27,7 +29,12 @@ function TodoForm () {
 
 
     return (
-        <form onSubmit={onSubmit}
+        <motion.form 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }} 
+        transition={{ duration: 0.5, 
+        ease: 'easeInOut'}}
+        onSubmit={onSubmit}
           className="TodoForm">
           <label className="TodoForm-label">Add Something New ᓚ₍ ^. .^₎</label>
             <textarea value={newTodoValue}
@@ -47,7 +54,7 @@ function TodoForm () {
                 Add New Task
                 </button>
             </div>
-        </form>
+        </motion.form>
     );
 }
 

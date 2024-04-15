@@ -1,5 +1,6 @@
 import "./App.css";
 import React from "react";
+import { motion } from "framer-motion";
 import { TodoCounter } from '../TodoCounter/TodoCounter'
 import { TodoSearch } from '../TodoSearch/TodoSearch'
 import { TodoList } from '../TodoList/TodoList'
@@ -27,7 +28,12 @@ function AppUI() {
 
     return (
       <div className='container'>
-        <div className='container_left'>
+        <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }} 
+        transition={{ duration: 1, 
+        ease: 'easeInOut'}}
+        className='container_left'>
           <Credits />
           <CreateNew />
           <CreateTodoButton
@@ -39,9 +45,14 @@ function AppUI() {
             <TodoForm />
           </Modal>
           )}
-        </div>
+        </motion.div>
     
-        <div className='container_right'>
+        <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }} 
+        transition={{ duration: 1, 
+        ease: 'easeInOut'}}
+        className='container_right'>
           <TodoCounter />
           <TodoSearch />
 
@@ -59,7 +70,7 @@ function AppUI() {
               />
             ))}
           </TodoList>
-        </div>
+        </motion.div>
       </div>
       );
 }
