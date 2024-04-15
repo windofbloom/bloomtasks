@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bloomtasks/static/css/main.9ec87162.css",
-    "main.js": "/bloomtasks/static/js/main.fea130eb.js",
+    "main.js": "/bloomtasks/static/js/main.974bf9e7.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/bloomtasks/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/bloomtasks/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/bloomtasks/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -10,10 +10,10 @@
     "static/media/background2.jpg": "/bloomtasks/static/media/background2.f839c58f0094fffc77bf.jpg",
     "index.html": "/bloomtasks/index.html",
     "main.9ec87162.css.map": "/bloomtasks/static/css/main.9ec87162.css.map",
-    "main.fea130eb.js.map": "/bloomtasks/static/js/main.fea130eb.js.map"
+    "main.974bf9e7.js.map": "/bloomtasks/static/js/main.974bf9e7.js.map"
   },
   "entrypoints": [
     "static/css/main.9ec87162.css",
-    "static/js/main.fea130eb.js"
+    "static/js/main.974bf9e7.js"
   ]
 }
