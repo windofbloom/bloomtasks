@@ -14,11 +14,13 @@ import { EmptyTodos } from '../EmptyTodos/EmptyTodos'
 import { Modal } from "../Modal/Modal";
 import { TodoForm } from "../TodoForm/TodoForm";
 import { TodoContext } from "../TodoContext/Context";
+import { NotFoundTodos } from "../NotFoundTodos/NotFoundTodos";
 
 function AppUI() {
     const {
       loading,
       error,
+      searchValue,
       searchedTodos,
       completeTodo,
       deleteTodo,
@@ -59,7 +61,10 @@ function AppUI() {
           <TodoList>
             {loading && <TodosLoading />}
             {error && <TodosError />}
-            {(!loading && searchedTodos.length === 0) && <EmptyTodos />}
+            
+            {!loading && searchedTodos.length === 0 && searchValue && (
+              <NotFoundTodos /> )}
+            {!loading && searchedTodos.length === 0 && !searchValue && <EmptyTodos />}
     
             {searchedTodos.map(todo => (
               <TodoItem key={todo.text} 

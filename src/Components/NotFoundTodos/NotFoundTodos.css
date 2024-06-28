@@ -1,0 +1,7 @@
+.emptyText {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    padding: 10px 0 10px 0;
+    line-height: 1em;
+    text-align: center;
+}
